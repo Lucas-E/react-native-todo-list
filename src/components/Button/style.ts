@@ -15,7 +15,7 @@ export const defaultButtonStyle = StyleSheet.create({
         color: 'white'
     },
     buttonRipple: {
-        color: '#dddddd50',
+        color: '#00000030',
         opacity: 0.1
     }
 })
