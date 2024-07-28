@@ -15,7 +15,7 @@ export function useTodoList(){
       }
     };
   
-    const removeTodo = (index: number) => {
+    const removeTodo = (index: number|string) => {
       const newTodos = todos.filter((_, i) => i !== index);
       setTodos(newTodos);
     };

@@ -9,7 +9,8 @@ interface styleProps{
 }
 
 interface props{
-    onClick: () => void
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    onClick: (...args:any) => void
     style?: styleProps|null|undefined,
     disabled?: boolean,
     text: string
