@@ -5,5 +5,9 @@ export const TodoListStyle = StyleSheet.create({
         height: '100%',
         paddingHorizontal: 10,
         paddingVertical: 30
+    },
+    todoListContainer: {
+        flexDirection: 'column',
+        marginTop: 20,
     }
 })

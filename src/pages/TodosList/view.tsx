@@ -19,7 +19,9 @@ export function TodoListView(model:ReturnType<typeof useTodoList>){
                 onClick={model.addTodo}
                 text="Add"
             />
-            <View>
+            <View style={
+                TodoListStyle.todoListContainer
+            }>
                 <FlatList 
                     data={model.todos}
                     renderItem={(item) => (
@@ -29,7 +31,7 @@ export function TodoListView(model:ReturnType<typeof useTodoList>){
                             <Text>{item.item}</Text>
                         </ListItem>
                     )}
-                    keyExtractor={(item) => item}
+                    keyExtractor={(item, index) => index.toString()}
                 />
             </View>
         </View>
