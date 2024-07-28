@@ -27,6 +27,7 @@ export function Button({
             style={isEmpty(style) ? defaultButtonStyle.button : style.button}
             disabled={disabled}
             onPress={onClick}
+            android_ripple={defaultButtonStyle.buttonRipple}
         >
             <Text style={isEmpty(style) ? defaultButtonStyle.text : style.text}>{text}</Text>
         </Pressable>
